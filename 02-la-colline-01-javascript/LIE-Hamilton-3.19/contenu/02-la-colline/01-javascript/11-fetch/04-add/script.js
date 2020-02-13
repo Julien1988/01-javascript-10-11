@@ -23,13 +23,6 @@
       .then(posts => console.log(posts));
   };
 
-  const post = {
-    id: getNewId,
-    name: getHeroName,
-    alterEgo: getAlterEgo,
-    abilities: getHeroPowers
-  };
-
   const newPost = post => {
     const options = {
       method: "POST",
@@ -49,6 +42,12 @@
     getAlterEgo = document.querySelector("#hero-alter-ego").value;
     getHeroPowers = document.querySelector("#hero-powers").value;
     console.log(getHeroName, getAlterEgo, getHeroPowers);
+    let post = {
+      id: getNewId,
+      name: getHeroName,
+      alterEgo: getAlterEgo,
+      abilities: getHeroPowers
+    };
 
     newPost(post);
     getPost();
