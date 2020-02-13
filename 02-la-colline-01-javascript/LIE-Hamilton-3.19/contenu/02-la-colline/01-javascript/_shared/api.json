@@ -147,6 +147,29 @@
       "alterEgo": "TYT",
       "abilities": "tutu",
       "id": 28
+    },
+    {
+      "name": "Jojo",
+      "alterEgo": "SuperMan",
+      "id": 29
+    },
+    {
+      "name": "Jojo",
+      "alterEgo": "SuperMan",
+      "id": 30
+    },
+    {
+      "name": "Jojo",
+      "alterEgo": "SuperMan",
+      "id": 31
+    },
+    {
+      "name": "Jojo",
+      "alterEgo": "SuperMan",
+      "abilities": [
+        "fleche feu"
+      ],
+      "id": 32
     }
   ]
 }

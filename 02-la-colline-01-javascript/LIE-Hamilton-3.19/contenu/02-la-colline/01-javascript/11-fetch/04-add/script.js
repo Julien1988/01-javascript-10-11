@@ -46,7 +46,7 @@
       id: getNewId,
       name: getHeroName,
       alterEgo: getAlterEgo,
-      abilities: getHeroPowers
+      abilities: [getHeroPowers]
     };
 
     newPost(post);
