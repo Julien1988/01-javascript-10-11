@@ -10,5 +10,27 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+
+  document.querySelector("#run").addEventListener("click", () => {
+    heroId = document.querySelector("#hero-id").value;
+    deleteHero(heroId);
+  });
+  const deleteHero = id => {
+    const heroObject = JSON.stringify({
+      id: id
+    });
+
+    let url = "http://localhost:3000/heroes/" + heroId;
+    fetch(url, {
+      method: "DELETE",
+      headers: new Headers({
+        "content-type": "application/json"
+      })
+    })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(err => console.error(err));
+    console.log(heroId);
+  };
 })();
